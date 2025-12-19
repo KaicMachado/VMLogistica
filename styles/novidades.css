@@ -1,0 +1,55 @@
+.novidades { 
+    display: flex;
+    justify-content: center;
+    height: 800px;
+}
+
+.novidades ul {
+    margin-top: 1rem;
+    text-align: center;
+    list-style: none;
+}
+
+.novidades-header { 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.novidades-sub {
+    font-size: 1.5rem;
+}
+
+.novidades li button { 
+    color: #fff ;
+    font-weight: 600;
+    font-size: 0.925rem;
+    padding: 1rem;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 10px;
+    width: 350px;
+    height: 65px;
+    margin-top: 1rem;
+    transition: .3s;
+}
+
+.novidades li button:hover { 
+    cursor: pointer;
+    transition: .3s;
+    transform: scale(1.1);
+    color: #FF0000;
+    background-color: #fff;
+    border: 1px solid #FF0000; 
+}
+
+@media(max-width: 600px) {
+    .novidades-header { 
+    font-size: 2.5rem;
+}
+.novidades-sub {
+    font-size: 1rem;
+}
+
+}

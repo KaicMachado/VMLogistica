@@ -1,0 +1,61 @@
+header { 
+    height: 650px;
+    background-image: url("../assets/img-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header div { 
+    width: 55%;
+    padding-top: 80px;
+    padding-left: 50px;
+}
+
+.txt-header {
+    color: #fff;
+    font-size: 5rem;
+}
+
+.txt-header span {
+    color: #FF0000;
+}
+
+header div h2 {
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    color: #9B9494;
+}
+
+
+@media(max-width: 950px) { 
+    header {
+    height: 400px;
+    }
+    header div { 
+    width: 80%;
+    padding-top: 20px;
+
+}
+    .txt-header {
+    font-size: 3rem;
+}
+
+header div h2 {
+    font-size: 0.925rem;
+    width: 65%;
+    padding-top: 1rem;
+ }
+}
+
+@media(max-width: 400px) {
+    header {
+        height: 350px;
+    }
+    .txt-header{
+        font-size: 2rem;
+    }
+    header div h2 { 
+        font-size: 0.8rem;
+    }
+}
