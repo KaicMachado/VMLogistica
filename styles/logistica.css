@@ -1,0 +1,127 @@
+/* Variáveis de Cores */
+        :root {
+            --cor-vermelho: #FF0000;
+            --cor-fundo-card: #F9F9F9;
+            --cor-texto-principal: #333333;
+            --cor-texto-secundario: #666666;
+            --cor-fundo-geral: #FFFFFF;
+        }
+
+        /* Estilos Globais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 50px 0; /* Adicionado padding vertical para visualização */
+            background-color: var(--cor-fundo-geral);
+            color: var(--cor-texto-principal);
+        }
+
+        /* Container Principal da Seção */
+        .logistica-section {
+            margin-top: 1rem;
+            width: 90%;
+            text-align: center;
+            padding: 0 20px; /* Garante que haja um pequeno padding nas laterais */
+        }
+
+        /* Títulos */
+        .logistica-section h3 {
+            color: var(--cor-vermelho);
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+
+        .logistica-section h2 {
+            font-size: 3em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .logistica-section p.descricao-principal {
+            color: var(--cor-texto-secundario);
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+        /* Layout dos Cards: Mobile (Padrão: Colunas Simples) */
+        .servicos-grid {
+            /* **AJUSTE AQUI:** Aumentando o max-width para 1200px para desktop */
+            max-width: 1200px; 
+            margin: 0 auto;
+            display: flex; /* Flexbox para empilhar no mobile */
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        /* Estilo Base do Card */
+        .card-servico {
+            background-color: var(--cor-fundo-card);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%; 
+            max-width: 600px; /* Limita a largura máxima no mobile/card principal */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* Efeito Hover */
+        .card-servico:hover {
+            transform: translateY(-5px); 
+            box-shadow: 4px 4px 10px rgba(255, 0, 0, 0.49); 
+        }
+
+        /* Título do Serviço */
+        .card-servico strong {
+            display: block;
+            font-size: 1.25em;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: var(--cor-texto-principal);
+        }
+
+        /* Descrição do Serviço */
+        .card-servico p {
+            font-size: 0.95em;
+            line-height: 1.4;
+            color: var(--cor-texto-secundario);
+        }
+
+        /* Media Query para Desktop (a partir de 768px) */
+        @media (min-width: 768px) {
+            
+            .servicos-grid {
+                /* Configura o layout como Grid */
+                display: grid;
+                /* Define 2 colunas com tamanho igual (1fr) */
+                grid-template-columns: 1fr 1fr; 
+                gap: 50px;
+                /* Remove a necessidade de max-width específico na grade, pois já está no container */
+            }
+
+            /* O card principal (Lotação) ocupa as duas colunas */
+            .card-principal {
+                grid-column: 1 / 3; 
+                max-width: none; /* Permite que o card principal ocupe toda a largura */
+            }
+            
+            /* Os cards menores */
+            .card-menor {
+                max-width: none; /* Permite que ocupem o 1fr da coluna */
+            }
+
+            /* Garante que a ordem no HTML resulte na grade correta: */
+            /* 1º Linha: Lotação (grid-column: 1 / 3) */
+            /* 2º Linha: First Mile, Last Mile */
+            /* 3º Linha: Distribuição, Gestão */
+            
+            /* Usamos 'order' para garantir a ordem correta quando o grid for aplicado */
+            .card-lotacao   { order: 1; }
+            .first-mile     { order: 2; }
+            .last-mile      { order: 3; }
+            .distribuicao   { order: 4; }
+            .gestao-frota   { order: 5; }
+        }
