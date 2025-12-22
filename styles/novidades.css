@@ -1,7 +1,7 @@
 .novidades { 
     display: flex;
     justify-content: center;
-    height: 800px;
+    margin-bottom: 1rem;
 }
 
 .novidades ul {

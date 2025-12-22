@@ -40,10 +40,9 @@ nav {
  cursor: pointer;
  color: #FF0000;
  transition: .3s;
- color: #fff;
 }
 
-.borda:hover {
+.nav-list li.borda:hover {
     background-color: #FF0000;
     color:#fff;
     transition: .3s ;

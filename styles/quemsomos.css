@@ -1,0 +1,53 @@
+.bg-quem-somos {
+    background-color: #f8f8f8;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+} 
+
+  .quem-somos {  
+    margin: 0 auto;
+    width: 90%;
+}
+
+.quem-somos h2 { 
+    display: flex;
+    justify-content: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 4rem; 
+    font-weight: bold; 
+    color: #FF0000; 
+    text-align: center; 
+    margin-top: 2rem;
+}
+
+.quem-somos p { 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1.25rem; 
+    font-weight: 500;
+    color: #333333; 
+    text-align: justify; 
+    margin-top: 1.5rem; 
+    line-height: 1.6; 
+    margin-bottom: 2rem;
+}
+
+.quem-somos span { 
+    display: block; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    color: #000; 
+    text-align: center; 
+    margin-top: 1.5rem; 
+    margin-bottom: 3rem;
+}
+
+@media(max-width: 950px) {
+    .quem-somos h2 { 
+        font-size: 2.5rem; 
+    }
+    
+    .quem-somos p, .quem-somos span { 
+        font-size: 1rem; 
+    }
+}
