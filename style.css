@@ -6,6 +6,8 @@
 @import url("styles/diferenciais.css");
 @import url("styles/clientes.css");
 @import url("styles/chamada.css");
+@import url("styles/footer.css");
+
 
 * {
     margin: 0;
