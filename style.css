@@ -5,6 +5,7 @@
 @import url("styles/logistica.css");
 @import url("styles/diferenciais.css");
 @import url("styles/clientes.css");
+@import url("styles/chamada.css");
 
 * {
     margin: 0;
