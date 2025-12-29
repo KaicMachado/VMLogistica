@@ -1,0 +1,118 @@
+       /* Container Principal da Seção */
+        .clientes-section {
+            margin: 1rem auto;
+            width: 90%;
+            text-align: center;
+            padding: 0 20px; /* Garante que haja um pequeno padding nas laterais */
+        }
+
+        /* Títulos */
+        .clientes-section h3 {
+            color: var(--cor-vermelho);
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+
+        .clientes-section h2 {
+            font-size: 3em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .clientes-section p {
+            color: #666666;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+
+/* Contêiner principal do Carrossel */
+.carousel-container {
+    position: relative;
+    max-width: 1200px; /* Ajuste a largura máxima */
+    margin: 0 auto;
+    display: flex; /* Para alinhar as setas e o track container */
+    align-items: center;
+}
+
+/* Área de visualização que esconde o excesso */
+.carousel-track-container {
+    width: 90%; /* Ajuste para dar espaço às setas */
+    overflow: hidden; /* **CRUCIAL**: Esconde os cards fora da visualização */
+    margin: 0 20px;
+}
+
+/* O "trilho" que contém todos os cards e será movido pelo JS */
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out; /* Suaviza a transição */
+}
+
+/* Estilo individual do Card */
+.card {
+    min-width: calc(100% / 3); /* **CRUCIAL**: Garante 3 cards por visualização */
+    box-sizing: border-box;
+    padding: 0.5rem;
+    text-align: center;
+    flex-shrink: 0; /* Impede que os cards encolham */
+    border: 1px solid #eee; /* Exemplo */
+    margin: 0 5px; /* Espaçamento entre cards */
+    background-color: #fff;
+}
+
+.card img {
+    width: 256px;
+    height: 123px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    padding-top: 0.5rem;
+    border-top: 1px solid #66666667;
+}
+
+/* Estilo das Setas */
+.arrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+    z-index: 10;
+    transition: color 0.2s;
+}
+
+.arrow:hover {
+    color: #f00; /* Cor de destaque ao passar o mouse */
+}
+
+/* --- Media Query para Dispositivos Móveis (max-width: 600px) --- */
+@media (max-width: 600px) {
+    
+    /* Oculta as setas de navegação, pois usaremos o swipe */
+    .arrow {
+        display: none;
+    }
+
+    /* O contêiner dos cards precisa de largura 100% */
+    .carousel-track-container {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px; /* Adiciona um pequeno padding nas laterais */
+    }
+
+    /* O Card individual agora ocupa 100% da área visível */
+    .card {
+        min-width: 100%; /* **CRUCIAL**: 1 card por visualização */
+        margin: 0; /* Remove margem entre cards para transição suave */
+    }
+    
+    /* Remove a altura fixa se ela estiver atrapalhando */
+    .card {
+        height: auto; 
+    }
+}

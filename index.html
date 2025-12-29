@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VM Logística</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -14,8 +15,8 @@
             </div>
             <div >
                 <ul class="nav-list">
-                    <li>Sobre</li>
-                    <li>Serviços</li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
                     <li>Clientes</li>
                     <li class="borda">Contato</li>
                 </ul>
@@ -36,7 +37,7 @@
             <li><button>Veja os detalhes do nosso novo projeto</button></li>
         </ul>
     </section>
-    <section class="bg-quem-somos">
+    <section id="sobre" class="bg-quem-somos">
         <div class="quem-somos">
             <h2>Quem Somos</h2>
             <p>A VM Transportes e Logística é uma empresa de transporte rodoviário de cargas especializada em operações First Mile, Last Mile, distribuição regional e gestão de frota dedicada, atuando com excelência no transporte de cargas refrigeradas e secas em todo o território nacional. <br>
@@ -46,7 +47,7 @@ A cada nova operação, reafirmamos nosso compromisso com a evolução constante
             Na VM, transportar é apenas o começo, o nosso destino é a excelência.</span>
 </div>
     </section>
-    <section class="logistica-section">
+    <section id="servicos" class="logistica-section">
     <h3>Nossos Serviços</h3>
     <h2>Soluções Completas em Logística</h2>
     <p class="descricao-principal">Oferecemos serviços especializados para garantir que seus produtos <br> cheguem com perfeição</p>
@@ -78,11 +79,9 @@ A cada nova operação, reafirmamos nosso compromisso com a evolução constante
             <p>Alocação de veículos e motoristas exclusivos para operações contínuas, com controle completo da performance e alinhamento total aos processos do cliente.</p>
         </div>
     </div>
-
-
     </section>
 
-    <section class="diferenciais-section">
+    <section id="diferenciais" class="diferenciais-section">
     <h2>Nossos Diferenciais</h2>
         
     <div class="servicos-grid">
@@ -115,5 +114,57 @@ A cada nova operação, reafirmamos nosso compromisso com a evolução constante
 
 
     </section>
+
+    <section class="clientes-section">
+        <h3>Nossos Parceiros</h3>
+        <h2>Confiança das maiores marcas</h2>
+        <p>Orgulho de atender líderes do setor alimentício</p>
+
+     <div class="carousel-container">
+            <button class="arrow prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+
+            <div class="carousel-track-container">
+                <div class="carousel-track" id="carouselTrack">
+                    
+                    <div class="card">
+                        <img src="assets/logo-fricasa.png" alt="Fricasa Logo">
+                        <p>Produtos Congelados</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/logo-pifpaf.png" alt="Pif Paf Logo">
+                        <p>Aves e derivados</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/logo-ambev.png" alt="Ambev Logo">
+                        <p>Bebidas</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/logo-minerva.png" alt="Minerva Foods Logo">
+                        <p>Congelados</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/logo-cacau.png" alt="Logo Cacau Show">
+                        <p>Produtos Refrigerados</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/logo-gtfoods.png" alt="Logo GT Foods">
+                        <p>Congelados</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="arrow next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
