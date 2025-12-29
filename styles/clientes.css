@@ -93,11 +93,6 @@
 /* --- Media Query para Dispositivos Móveis (max-width: 600px) --- */
 @media (max-width: 600px) {
     
-    /* Oculta as setas de navegação, pois usaremos o swipe */
-    .arrow {
-        display: none;
-    }
-
     /* O contêiner dos cards precisa de largura 100% */
     .carousel-track-container {
         width: 100%;
