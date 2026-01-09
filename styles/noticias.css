@@ -46,8 +46,38 @@
 }
 
 
+.card-novidade {
+    background-color: var(--cor-fundo-card);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%; 
+    box-shadow: 4px 4px 8px rgba(255, 0, 0, 0.49);
+    margin: 2rem auto;
+}
+
+.card-novidade h4 {
+    font-size: 2.5rem;
+}
+
+.card-novidade p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #555;
+}
+
+
+
 @media(max-width: 768px) {
     .cards-projetos {
     gap: 0.5rem;
 }
+    .card-novidade h4 {
+        font-size: 1.5rem;
+    }
+    .card-novidade p {
+        font-size: 0.75rem;
+    }
 }
