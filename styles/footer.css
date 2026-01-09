@@ -35,6 +35,12 @@ footer {
     padding-bottom: 0.5rem;
 }
 
+.footer-list li a {
+   display: flex;
+   gap: 10px;
+   
+}
+
 .footer-list li span {
     height: min-content;
 }
